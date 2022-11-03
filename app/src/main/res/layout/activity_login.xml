@@ -48,11 +48,84 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/edittext"
-                android:drawableStart="@drawable/email"
+                android:drawableStart="@drawable/password"
                 android:hint="Password.."
                 android:textColor="#0B0B0B"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_pass"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:text="LogIn"
+                android:textAllCaps="false"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/forgotpswd_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:text="Forgot Password ?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orlogin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgotpswd_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Or Login Using Phone Number"
+                android:textAlignment="center"
+                android:textColor="#171616"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/phone_number_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orlogin_text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:drawableStart="@drawable/phone"
+                android:text="Phone Number"
+                android:textAllCaps="false"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/signup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone_number_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:padding="10dp"
+                android:text="Need a New Account? SignUp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
 
         </RelativeLayout>
     </ScrollView>

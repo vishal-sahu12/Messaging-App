@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#56F66AC7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginSignUp.RegisterActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/registerImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/wp" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/registerImage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/email"
+        android:hint=" Enter Email.."
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signup_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/signup_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext"
+        android:drawableStart="@drawable/password"
+        android:hint="Password.."
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_pass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/already_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="4dp"
+        android:padding="10dp"
+        android:text="Already have an Account? LogIn"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
