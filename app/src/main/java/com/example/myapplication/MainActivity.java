@@ -1,11 +1,14 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toolbar;
 
@@ -45,11 +48,35 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("WhatsApp");
     }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.option_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+         super.onOptionsItemSelected(item);
+         if (item.getItemId()==R.id.logout_menu);
+        {
+            auth.signOut();
+            sendUserToLogin();
+        }
+        if (item.getItemId()==R.id.setting_menu);
+        {
+            sendUserToSetting();
+        }
+        return true;
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
         FirebaseUser currentuser = auth.getCurrentUser();
         if (currentuser==null){
+            auth.signOut();
             sendUserToLogin();
         }
     }
@@ -57,5 +84,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+    private void sendUserToSetting() {
+        Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+        startActivity(intent);
+
     }
 }
