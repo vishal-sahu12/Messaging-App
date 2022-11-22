@@ -10,14 +10,15 @@
         layout="@layout/app_bar_layout"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_profile"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:id="@+id/circle_profile"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
         android:src="@drawable/profile_image"
         app:civ_border_color="@color/colorPrimaryDark"
-        app:civ_border_width="4dp"
-        android:layout_marginTop="90dp"/>
+        app:civ_border_width="4dp" />
+
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
@@ -61,9 +62,9 @@
         android:layout_marginRight="20dp"
         android:background="@color/colorPrimary"
         android:padding="5dp"
-        android:textColor="@color/white"
         android:text="Update"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="25sp" />
 
 </RelativeLayout>

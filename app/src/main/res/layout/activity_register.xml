@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/registerImage"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:layout_marginTop="20dp"
         android:scaleType="fitCenter"
         android:src="@drawable/wp" />
@@ -54,7 +54,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="26dp"
         android:layout_marginRight="20dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/buttons"
         android:padding="5dp"
         android:text="SignUp"
         android:textAllCaps="false"

@@ -59,11 +59,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
          super.onOptionsItemSelected(item);
-         if (item.getItemId()==R.id.logout_menu);
-        {
-            auth.signOut();
-            sendUserToLogin();
-        }
         if (item.getItemId()==R.id.setting_menu);
         {
             sendUserToSetting();
@@ -74,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser currentuser = auth.getCurrentUser();
-        if (currentuser==null){
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if (currentUser==null){
             auth.signOut();
             sendUserToLogin();
         }
@@ -84,10 +79,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+
     }
-    private void sendUserToSetting() {
+    private void sendUserToSetting()
+    {
         Intent intent = new Intent(MainActivity.this, SettingActivity.class);
         startActivity(intent);
-
+        finish();
     }
 }

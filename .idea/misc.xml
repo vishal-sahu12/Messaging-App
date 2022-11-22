@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/buttons.xml" value="0.1395" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/edittext.xml" value="0.1435" />
+        <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.224" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/drawable/sender_message_layout.xml" value="0.121" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_login.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/layout/fragment_request.xml" value="0.2359375" />
         <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/menu/option_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Vishal Sahu/AndroidStudioProjects/MyApplication3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1065" />
       </map>
     </option>
   </component>
